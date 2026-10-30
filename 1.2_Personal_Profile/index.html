@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niu Zaixi | Personal Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top">NZ<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#interests">Interests</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, WELCOME TO MY PAGE</p>
+        <h1 id="hero-title">I'm Niu Zaixi<span>.</span></h1>
+        <p class="hero-intro">A computer science student exploring AI, software and the web.</p>
+        <a class="button" href="#about">Get to know me <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="portrait-wrap">
+        <img src="images/profile-placeholder.svg" alt="Placeholder illustration for a profile photo" class="portrait">
+        <p class="photo-caption">MY PROFILE</p>
+      </div>
+    </section>
+    <section class="section about" id="about">
+      <div><p class="eyebrow">01 / INTRODUCTION</p><h2>A little about me<span>.</span></h2></div>
+      <div class="section-copy"><p>Hi, I'm Niu Zaixi (牛在溪), a Computer Science and Technology student in Class 2501 at An De College, Xi'an University of Architecture and Technology.</p><p>I am interested in artificial intelligence, software development and internet technology. I am currently learning programming basics and web development. Through learning and practical projects, I hope to improve my technical skills and explore how AI can be used in real applications.</p></div>
+    </section>
+    <section class="section skills" id="skills">
+      <div><p class="eyebrow">02 / WHAT I'M LEARNING</p><h2>My skills<span>.</span></h2><p class="muted">What I am learning and exploring.</p></div>
+      <ul class="skill-list">
+        <li><span>01</span><strong>Python</strong><small>Learning the basics</small></li>
+        <li><span>02</span><strong>HTML / CSS</strong><small>Learning structure and styling</small></li>
+        <li><span>03</span><strong>JavaScript</strong><small>Beginner</small></li>
+        <li><span>04</span><strong>Git / GitHub</strong><small>Learning version control</small></li>
+        <li><span>05</span><strong>AI tools</strong><small>Interested in AI-assisted coding and applications</small></li>
+      </ul>
+    </section>
+    <section class="section projects" id="projects">
+      <div><p class="eyebrow">03 / PROJECTS</p><h2>Learning by doing<span>.</span></h2><p class="muted">A project currently in progress.</p></div>
+      <article class="project-card"><p class="project-status">IN PROGRESS</p><h3>Corporate website redesign</h3><p>Participating in requirements gathering, redesign planning and development practice.</p></article>
+    </section>
+    <section class="section interests" id="interests">
+      <div><p class="eyebrow">04 / INTERESTS</p><h2>Things I enjoy<span>.</span></h2></div>
+      <ul class="interest-list"><li>Artificial intelligence</li><li>Programming</li><li>Technology</li><li>Football</li><li>Internet products</li></ul>
+    </section>
+    <section class="section contact" id="contact">
+      <div><p class="eyebrow">05 / SAY HELLO</p><h2>Get in touch<span>.</span></h2><p class="muted">A space for getting in touch. This practice form does not send messages.</p></div>
+      <form id="contact-form">
+        <label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your name" required>
+        <label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+        <button class="button" type="submit">Send message <span aria-hidden="true">↗</span></button>
+        <p id="form-message" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer><div><span>© Niu Zaixi</span><a href="#top">Back to top ↑</a></div></footer>
+  <script>
+    // This practice form shows a message; it does not send data to a server.
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      document.getElementById('form-message').textContent = 'Thank you! This is a practice form, so your message has not been sent.';
+    });
+  </script>
+</body>
+</html>
